@@ -372,6 +372,7 @@ i{
     margin-left: 5px;
 }
 
+
 @media (max-width: 991px) {
     .faq-header {
         margin-bottom: 50px;
@@ -445,6 +446,8 @@ i{
 
 }
 
+
+
 html,
 body {
     width: 100%;
@@ -457,6 +460,9 @@ body {
     color: #000000;
     text-shadow: 2px 2px 2px transparent;
     webkit-tap-highlight-color: rgb(0, 255, 191);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 0;
+    animation-fill-mode: forwards;
 }
 
 hr {
@@ -486,6 +492,8 @@ a:focus {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'skrapbook';
+    display: "flex";
+    flex-direction: "column";
 }
 
 p {
@@ -1670,7 +1678,8 @@ video {
                 height: 100vh;
             }
 </style>
-<nav id="sidebarOff" class="navbar navbar-default navbar-fixed-top">
+<body >
+<nav id="sidebarOff" class="navbar navbar-default navbar-fixed-top" class="media wow fadeInRight">
     <nav id="sidebar"  > 
     <div class="container-fluid">
         <div class="navbar-header">
@@ -1689,7 +1698,7 @@ video {
                     <a class="page-scroll" href="#"><h4> Degen Bears</h4></a>
                 </li>
 
-
+                
             </div>
             <div class="navbar-collapse collapse" id="sidebarOff">
                 <ul class="nav navbar-nav">
@@ -1724,12 +1733,7 @@ video {
 </div>
 <div class="media wow fadeInRight"></div>
 <h3> 1777 Bears on the Blockchain</h3>
-<video width="525" height="300" controls autoplay preload="auto">
-    <source src="https://cdn.discordapp.com/attachments/875370923954430013/917463278840610856/IMG_0914.mov" type='video/mp4' />
-    <source src="https://cdn.discordapp.com/attachments/875370923954430013/917463278840610856/IMG_0914.mov" type='video/webm' />
-    <source src="https://cdn.discordapp.com/attachments/875370923954430013/917463278840610856/IMG_0914.mov" type='video/ogg codecs="theora, vorbis"' />
-      Your browser doesn't support HTML5 video. Download it <a href="https://cdn.discordapp.com/attachments/875370923954430013/917463278840610856/IMG_0914.mov" download>here</a>
-    </video>
+
     </div>
     </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4"></div>
@@ -1740,23 +1744,26 @@ video {
         <br>
         <br>
         <br>
-         <p style="text-align:center; font-size: 60px; color:rgb(0, 0, 0)"> &emsp;&emsp;&emsp;&emsp;About us</p>
+        <div class="media wow fadeInRight">
+         <p style="text-align:center; font-size: 60px; color:rgb(0, 0, 0)">About us</p>
         <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; Welcome to the Degen Bears</p>
+             Welcome to the Degen Bears</p>
         <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;· The collection of 1777 Bears on the Solana Forest</p>
+            · The collection of 1777 Bears on the Solana Forest</p>
                 <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;· Created and coded by a 13-year-old coder</p>
+                    · Created and coded by a 13-year-old coder</p>
                     <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;·Trying to change the Wolrd and help endangered bears</p>
+                        ·Trying to change the Wolrd and help endangered bears</p>
                             <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; · Inspiring Young Artists and devs </p>
+                                 · Inspiring Young Artists and devs </p>
                                 <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; · Changing the space</p>
+                                      · Changing the space</p>
                                     <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  · Bringing new animals to the Solforest</p>
+                                          · Bringing new animals to the Solforest</p>
                                         <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" >
-                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  · And More ...</p>
+                                              · And More ...</p>
+                                            </div>
+                                              
     </section>
 
 
@@ -1764,7 +1771,7 @@ video {
 
 </div>
 
-    <div id=team>
+        <div id="team">
         <section id="team">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-col text-center w-full mb-20">
@@ -1773,22 +1780,24 @@ video {
               <div class="flex flex-wrap -m-4">
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                   <div class="h-full flex flex-col items-center text-center">
-                    <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="https://cdn.discordapp.com/attachments/875370923954430013/917453479423926322/IMG_0918.jpg" width="350px" >
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="https://cdn.discordapp.com/attachments/875370923954430013/917453479423926322/IMG_0918.jpg" width="270px" >
                     <div class="w-full">
                       <h2 class="title-font font-medium text-lg text-gray-900">Alexandros Drousiotis</h2>
                       <h3 class="text-gray-500 mb-3">Founder / Developer  </h3>
-                      <h4 class="text-gray-500 mb-4">Hello, I am Alexander or drou.sol i am 13-years old. I have been a crypto fanatic since 2018 and an nft fanatic since July i have been invovled in the stock market since i was 8.I love coding and collecting nfts in my free time .  </h4>
+                      <p style="text-align:center; font-size: 20px; color:rgb(0, 0, 0)" ><h4>Hello, I am Alexander or drou.sol i am 13-years old.M</h4>
+                        <h4 class="media wow fadeInRight">I have been a crypto fanatic since 2018 and an nft fanatic since July i have been invovled in the stock market since i was 8.</h4>
+                        <h4>I love coding and collecting nfts in my free time .  </h4></p>
                     </div>
                   </div>
                 </div>
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="https://cdn.discordapp.com/attachments/875370923954430013/917147113966686278/Bear_pfp.jpeg" width="350px" >
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="https://cdn.discordapp.com/attachments/875370923954430013/917147113966686278/Bear_pfp.jpeg" width="270px" >
                 <h2 class="title-font font-medium text-lg text-gray-900">The community</h2>
                 <h3 class="text-gray-500 mb-3">Everything in the whole wide world </h3>
                 <h4 class="text-gray-500 mb-4">Hello. We are the Bear community . We love honey </h4>
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                   <div class="h-full flex flex-col items-center text-center">
 
-                          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="./assets/freckled.webp" width="350px" >
+                          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4 inverted" src="./assets/freckled.webp" width="270px" >
                           <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Freckled.sol</h2>
                             <h3 class="text-gray-500 mb-3">Consultant</h3>
