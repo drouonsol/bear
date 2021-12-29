@@ -7,7 +7,7 @@
     <meta name="image"
     content="https://cdn.discordapp.com/attachments/875370923954430013/917152995429449799/Untitled_Artwork.png">
     <meta name="description"
-        content="Degen bears is a collection of 1777 bears that were raised in the Solforest by a 13-year-old coder" />
+        content="A collection of 1777 created and coded by a 13-year-old coder" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Solstain Gang">
     <link rel="stylesheet" href="https://solstains.xyz/css/bootstrap.min.css" />
@@ -437,9 +437,9 @@ i{
 
 
 @font-face {
-    font-family: 'jack_armstrongregular';
-    src: url('jack_armstrong-webfont.woff2') format('woff2'),
-         url('jack_armstrong-webfont.woff') format('woff');
+    font-family: 'Skrapbook';
+    src: 
+         url('./fonts/Skrapbook.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -452,7 +452,7 @@ body {
 }
 
 body {
-    font-family: 'jack_armstrongregular';
+    font-family: 'skrapbook';
     background-color: rgb(255, 255, 255);
     color: #000000;
     text-shadow: 2px 2px 2px transparent;
@@ -485,7 +485,7 @@ a:focus {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'jack_armstrongregular';
+    font-family: 'skrapbook';
 }
 
 p {
@@ -555,8 +555,8 @@ footer {
 .navbar-default {
     border-color: transparent;
     font-family: 'Jack armstrong',Arial,sans-serif;
-    background-color: #000000;
-    color: #000000;
+    background-color: transparent;
+    color: transparent;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -564,7 +564,7 @@ footer {
 
 .navbar-header > .navbar-brand {
   font-family: 'Jack armstrong ',Arial,sans-serif;
-    color: #000000;
+    color: white;
     padding: 25px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -577,7 +577,7 @@ footer {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #c51212;
+    background-color: transparent ;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -588,7 +588,7 @@ footer {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: rgb(131, 2, 2);
+    color: white;
     text-shadow: transparent;
 }
 
@@ -618,7 +618,7 @@ footer {
     }
 
     .navbar-header > .navbar-brand {
-        color: #000000;
+        color: #ffffff;
         padding: 19px;
     }
 
@@ -637,7 +637,7 @@ footer {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #494949;
+        color: #ffffff;
     }
 
     .navbar-default.affix {
@@ -654,7 +654,7 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #000000;
+        color: white;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -1670,7 +1670,8 @@ video {
                 height: 100vh;
             }
 </style>
-<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="sidebarOff" class="navbar navbar-default navbar-fixed-top">
+    <nav id="sidebar"  > 
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
@@ -1685,11 +1686,13 @@ video {
                 }
                 </style>
                 <li>
-                    <a class="page-scroll" href=""><h4> Degen Bears</h4></a>
+                    <a class="page-scroll" href="#"><h4> Degen Bears</h4></a>
                 </li>
+
+
             </div>
-        <div class="navbar-collapse collapse" id="bs-navbar">
-            <ul class="nav navbar-nav">
+            <div class="navbar-collapse collapse" id="sidebarOff">
+                <ul class="nav navbar-nav">
                 <li>
                     <a class="page-scroll" href="#about"><h4>About</h4></a>
                 </li>
@@ -1699,12 +1702,10 @@ video {
                 <li>
                     <a class="page-scroll" href="#faq"><h4>FAQ</h4></a>
                 </li>
-		<li>
-		<a class="page-schroll" href="https://hub.degenbears.com"><h4>HUB</h4></a>
-		</li>
             </ul>
         </div>
     </div>
+    </nav>
 </nav>
 </section>
 
